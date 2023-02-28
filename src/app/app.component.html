@@ -1,0 +1,10 @@
+<!-- UI-Loader -->
+<ngx-ui-loader fgsColor="#ff4081" pbColor="#ff4081" textColor="ff4081" text="Please Wait..."></ngx-ui-loader>
+
+<div ngxUiLoaderBlurred (blur)="10">
+    <!-- Nav-bar Static -->
+    <app-navbar></app-navbar>
+
+    <!-- Dynamic contents -->
+    <router-outlet></router-outlet>
+</div>

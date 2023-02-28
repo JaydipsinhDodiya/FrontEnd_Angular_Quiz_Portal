@@ -1,0 +1,39 @@
+<mat-card>
+
+    <mat-action-list>
+
+        <div mat-subheader> Available Categories </div>
+
+        <!-- All Quiz  -->
+        <button routerLink= "/student-dashboard/0" mat-list-item>
+            <mat-icon mat-list-icon>quiz</mat-icon>
+            All Quiz
+        </button>
+        
+        <!-- Profile -->
+        <button mat-list-item>
+            <mat-icon mat-list-icon>account_circle</mat-icon>
+            Profile
+        </button>
+        <!-- <button mat-list-item  routerLink= "/student-dashboard/profile">
+            <mat-icon mat-list-icon>account_circle</mat-icon>
+            Profile
+        </button> -->
+
+        
+         <!-- Category -->
+         <button [routerLink]= "'/student-dashboard/'+c.cid"
+          mat-list-item *ngFor="let c of categories">
+            <mat-icon mat-list-icon>list</mat-icon>
+            {{c.title}}
+        </button>
+
+         <!--LogOut  -->
+        <button mat-list-item >
+            <mat-icon mat-list-icon>logout</mat-icon>
+            LogOut
+        </button>
+
+    </mat-action-list>
+
+</mat-card>

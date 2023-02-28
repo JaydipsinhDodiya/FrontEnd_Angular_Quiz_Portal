@@ -1,0 +1,20 @@
+.truncate{
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.example-header-image {
+    background-image: url('../../../../assets/quiz.jpg');
+    background-size: cover;
+  }
+.grid-container {
+    display: grid;
+    height: 150px;
+    align-content: center;
+  }
+  .padding8{
+    padding-left: 8px;
+    padding-right: 8px;
+  }

@@ -1,0 +1,47 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row mt10">
+            <div class="col-md-6 offset-md-3">
+                <mat-card mt20>
+                <div class="container text-center">
+                    <img src="../../../assets/logo.png" alt="" style="height: 150px;width: 140px;"/>
+                    <h1>Welcome To Login Page</h1>
+
+                    <form (ngSubmit)="formSubmit()">
+                        <!-- Login Page -->
+                        <!-- username field -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>User Name</mat-label>
+                            <input
+                            [(ngModel)]="loginData.username"
+                            required name="username" matInput placeholder="Enter Here">
+                            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                            <mat-hint>Valid Username</mat-hint>
+                        </mat-form-field>
+
+                        <!-- Password field -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>User Password</mat-label>
+                            <input
+                            [(ngModel)]="loginData.password" 
+                            required name="password" type="password" matInput placeholder="Enter Here">
+                            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        </mat-form-field>
+                        <div class="container text-center">
+                            <!-- Submit Button Field -->
+                            <button type="Login" mat-raised-button color="primary">Submit</button>
+
+                            <!-- {{loginData | json}} -->
+                            <!-- Clear Button Field -->
+                            <button type="reset" style="margin-left: 20px;" mat-raised-button
+                                color="accent">Reset</button>
+
+                        </div>
+                    </form>
+               
+                </div>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
